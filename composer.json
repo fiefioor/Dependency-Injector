@@ -1,0 +1,22 @@
+{
+    "name": "vendor/dependency-injector",
+    "description": "Symfony inspired Dependency-Injector.",
+    "authors": [
+        {
+            "name": "fiefioor",
+            "email": "tfon35@gmail.com"
+        }
+    ],
+    "autoload": {
+        "classmap": [
+            "src/",
+            "test/"
+        ]
+    },
+    "require": {
+        "psr/container": "dev-master"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "5.7.x-dev"
+    }
+}
