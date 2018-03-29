@@ -45,6 +45,11 @@ class Container implements ContainerInterface {
 
         /** @var array $entry */
         foreach ($configurationProvider->getConfiguration() as $id => $entry) {
+            
+           if(!array_key_exists('arguments', $entry)){
+               $entry['arguments'] = array();
+           }
+            
             $this->configurations[$id] = new ServiceConfiguration($id, $entry['className'], $entry['arguments']);
         }
         

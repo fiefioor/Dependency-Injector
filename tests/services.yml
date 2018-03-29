@@ -1,0 +1,12 @@
+parameters:
+     thing1: 13
+     
+services:
+    test.class1:
+        className: tests\classes\exampleClass1
+    test.class2:
+        className: tests\classes\exampleClass2
+        arguments: ['@test.class1']
+    test.class3:
+        className: tests\classes\exampleClass3
+        arguments: ['#thing1', 'przemek']
